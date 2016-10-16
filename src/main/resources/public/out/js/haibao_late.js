@@ -1,0 +1,23 @@
+$(function(){
+	setTimeout(function(){
+	   $("#pic2").addClass("pic2");
+	},500);
+	setTimeout(function(){
+	   $("#pic3").addClass("pic3");
+	},1000);
+	setTimeout(function(){
+	   $("#pic4").addClass("pic4");
+	},1500);
+	setTimeout(function(){
+	   $("#pic5").addClass("pic5");
+	},2000);
+	setTimeout(function(){
+	   $("#pic6").addClass("pic6");
+	},2200);
+	setTimeout(function(){
+	   $("#pic7").addClass("pic7");
+	},2300);
+	setTimeout(function(){
+	   $("#pic8").addClass("pic8");
+	},2500);
+});
