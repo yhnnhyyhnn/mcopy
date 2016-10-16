@@ -1,6 +1,6 @@
 $(function(){
 
-	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://message/?uin=1291661978&amp;Site=大洋图文在线客服&amp;Menu=yes\" target=\"_black\" class=\"btn btn-qq\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\"/out/images/right_weixin.png\" onclick=\"window.location.href=\'#\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\">020-87688235</div></div><div class=\"btn btn-top\"></div></div>";
+	var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\"><a href=\"tencent://message/?uin=615053101&amp;Site=大洋图文在线客服&amp;Menu=yes\" target=\"_black\" class=\"btn btn-qq\"></a><div class=\"btn btn-wx\"><img class=\"pic\" src=\"/out/images/right_weixin.png\" onclick=\"window.location.href=\'#\'\"/></div><div class=\"btn btn-phone\"><div class=\"phone\">400-6500-268</div></div><div class=\"btn btn-top\"></div></div>";
 	$("#top").html(tophtml);
 	$("#izl_rmenu").each(function(){
 		$(this).find(".btn-wx").mouseenter(function(){

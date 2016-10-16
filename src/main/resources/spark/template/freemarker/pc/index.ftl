@@ -274,14 +274,14 @@
 
             <div class="fenxiang">
                 <div class="fenxiang1">
-                    扫描微信二维码，关注最新大洋资讯
+                    扫描微信二维码，关注最新美立特资讯
                 </div>
 
-                <div class="fenxiang2">
+                <!--<div class="fenxiang2">
                     <a class="f1"></a>
                     <a class="f2"></a>
                     <a class="f3"></a>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
