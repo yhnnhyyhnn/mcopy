@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.ImportResource;
 import spark.ModelAndView;
 import spark.template.freemarker.FreeMarkerEngine;
 
@@ -23,6 +24,7 @@ import static spark.SparkBase.staticFileLocation;
  */
 @Configuration
 @ComponentScan("cn.com.mcopy")
+@ImportResource("")
 @Import(InitDatabase.class)
 public class InitWebRoute {
 
