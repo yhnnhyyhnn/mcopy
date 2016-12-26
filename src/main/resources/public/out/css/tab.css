@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+/* tab */
+.tab{width:708px;margin:20px auto;border:0px solid #ccc;}
+.tab ul.menu{height:34px;background:#f6f6f6;}
+.tab ul.menu li{float:left;text-align:center;width:120px;height:32px;background:#f6f6f6;line-height:32px;list-style:none;font-size:14px;cursor:pointer; font-family:'微软雅黑';}
+.tab ul.menu li.active{background:#841da3;color:#fff;}
+.tab ul.menu li.active a{background:#841da3;color:#fff;}
+.con1,.con2,.con3,.con4,.con5,.con6,.con7,.con8,.con9,.con10{border-top:2px solid #841da3;margin-top:-2px;padding:20px; overflow:hidden;}
+.con2,.con3,.con4,.con5,.con6,.con7,.con8,.con9,.con10{display:none;}

@@ -2,23 +2,27 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>北京美立特图文制作有限公司</title>
-    <meta name="description" content="广州大洋图文数码快印有限公司,专业提供一站式图文快印解决方案,拥有近20年经验的大型数码快印全国连锁品牌店.目前拥有20多家分店,店面遍布在广州,深圳,东莞等地.服务涵括:彩色数码印刷,黑白数码印刷,大幅面写真输出,工程图纸输出,文本装订,商务印刷,网络印刷,图文快印,数码快印,图文打印,数码直印,CAD晒图,CAD出图,CAD彩图,数码打样,大图复印,标书打印,工程图打印,菜谱印刷,服装吊牌印刷等,为用户提供24小时图文印刷及送货服务。"/>
-    <meta name="keywords" content="大洋图文数码快印,广州数码快印店,数码快印,越秀图文店,海珠图文店,天河图文店,白云图文店,图文快印,广州图文快印,黑白打印,24小时数码快印店,24小时图文快印店,24小时打印店,图文打印店,数码打印店,数码快印公司,广州数码-快印店,广州图文店,标书制作,工程图打印,晒蓝图,深圳数码快印,东莞数码快印,广州黑白印刷厂,广州彩色印刷厂,数字印刷,印刷报价,白云数码快印,天河数码快印,海珠数码快印,广州印店,越秀数码快印,广州图文快印店,数字印刷,云印刷,网络印刷,大洋图文,菜谱制作,广州数码快印店,广州复印店,广州图文店,广州快印店,大图打印,数码印刷,复印店,彩色喷画,工程图纸打印/复印,CAD输出,工程图纸扫描,平面设计,标书制作装订"/>
-    <link href="/out/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="/out/css/index.css" />
+    <title>北京美立特图文快印</title>
+    <meta name="description" content="美立特图文快印,专业提供一站式图文快印解决方案,我们的服务涵括:彩色数码印刷,黑白数码印刷,大幅面写真输出,工程图纸输出,文本装订,商务印刷,网络印刷,图文快印,数码快印,图文打印,数码直印,CAD晒图,CAD出图,CAD彩图,数码打样,大图复印,标书打印,工程图打印,菜谱印刷,服装吊牌印刷等" />
+    <meta name="keywords" content="美立特图文快印,图文快印,黑白打印,24小时数码快印店,24小时图文快印店,24小时打印店,图文打印店,数码打印店,数码快印公司,标书制作,工程图打印,晒蓝图,数字印刷,印刷报价,数字印刷,云印刷,网络印刷,菜谱制作,大图打印,数码印刷,复印店,彩色喷画,工程图纸打印/复印,CAD输出,工程图纸扫描,平面设计,标书制作装订" />
+    <link href="/out/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="/out/css/index.css"/>
     <script type="text/javascript" src="/out/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="/out/js/jquery.SuperSlide.js"></script>
     <script type="text/javascript" src="/out/js/script.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#nav li").hover(function(){
-                $(this).find("ul").slideDown("slow");
-            },function(){
-                $(this).find("ul").slideUp("fast");
-            });
-        });
-    </script>
+    <script type="text/javascript" src="/local/index.js"></script>
+
+    <style>
+        #nav .mainlevel ul{
+            list-style:none;
+            margin: 0px;
+            padding: 0px;
+        }
+        #nav .mainlevel ul li {
+            folat:left;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -27,16 +31,8 @@
 <div class="boxcontent">
     <div class="top">
         <div class="logo">
-            <a href="/"><img src="/out/images/logo.jpg" title="广州大洋图文" alt="广州大洋图文"></a>
+            <a href="/"><img src="/out/images/logo.jpg" title="北京美立特快印" alt="北京美立特快印"></a>
         </div>
-
-
-        <div class="shousuo">
-            <h1>广州大洋图文是广州最好的图文快印连锁店，连锁公司</h1>
-        </div>
-
-
-
 
     </div>
 
@@ -44,62 +40,67 @@
 
 <!--[if lt IE 9]>
 <style>
-	#nav .mainlevel li{
-		background-color:#f48407;
-	}
+    #nav .mainlevel li {
+        background-color: #f48407;
+    }
 </style>
 <![endif]-->
 <!--[if lt IE 8]>
 <style>
-	#nav .mainlevel{
-		position:relative;
-	}
-	#nav .mainlevel ul{
-		left:0px;
-	}
+    #nav .mainlevel {
+        position: relative;
+    }
+
+    #nav .mainlevel ul {
+        left: 0px;
+    }
+
 </style>
 <![endif]-->
 <!--[if IE 6]>
 <style>
-	#top{display:none;}
+    #top {
+        display: none;
+    }
 </style>
 <![endif]-->
 <!--daohang-->
 
-<div class="boxcontent daohang" >
+<div class="boxcontent daohang">
     <ul id="nav">
         <li class="jquery_out">
             <a href="/">首页</a>
         </li>
-        <li class="mainlevel">
-            <a href="#">核心业务</a>
-            <ul>
-                <li><a href="#">数码印刷</a></li>
-                <li><a href="#">商务印刷</a></li>
-                <li><a href="#">格式装订</a></li>
-                <li><a href="#">公关咨询</a></li>
-                <li><a href="#">广告制作</a></li>
-                <li><a href="#">标识标牌</a></li>
-                <li><a href="#">奖杯奖状</a></li>
-                <li><a href="#">增值服务</a></li>
-            </ul>
+        <li class="mainlevel" id="hxywlis">
+            <a href="/hxyw">核心业务</a>
+        <#--<ul>
+            <li><a href="#">数码印刷</a></li>
+            <li><a href="#">商务印刷</a></li>
+            <li><a href="#">格式装订</a></li>
+            <li><a href="#">公关咨询</a></li>
+            <li><a href="#">广告制作</a></li>
+            <li><a href="#">标识标牌</a></li>
+            <li><a href="#">奖杯奖状</a></li>
+            <li><a href="#">增值服务</a></li>
+        </ul>-->
         </li>
         <li class="mainlevel">
-            <a href="#">成功案例</a>
+            <a href="/cgal">成功案例</a>
         </li>
         <li class="mainlevel">
-            <a href="#">服务网点</a>
+            <a href="/fwwd">服务网点</a>
         </li>
 
         <li class="mainlevel">
-            <a href="#">关于我们</a>
-            <ul>
-                <li><a href="#">公司简介</a></li>
-                <li><a href="#">服务优势</a></li>
-                <li><a href="#">新闻中心</a></li>
-                <li><a href="#">会员中心</a></li>
-                <li><a href="#">客户须知</a></li>
-            </ul>
+            <a href="/gywm">关于我们</a>
+
+        <#--<ul>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">服务优势</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">客户须知</a></li>
+        </ul>-->
         </li>
     </ul>
 </div>
@@ -116,43 +117,44 @@
             <div class="bd">
                 <ul>
                     <li>
-                        <a href="http://www.dytw.net" class="pic" style="background:url(https://img.alicdn.com/imgextra/i1/419253197/TB2klepopXXXXavXFXXXXXXXXXX_!!419253197.jpg) center center no-repeat;">
+                        <a href="#" class="pic"
+                           style="background:url(/local/images/首页1.jpg) center center no-repeat;">
 
                         </a>
                     </li>
 
                     <li>
-                        <a href="/Home/Onepage/caiyin.html" class="pic" id="pic2" >
+                        <a href="#" class="pic" id="pic2">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/caiyin.html" class="pic" id="pic3" >
+                        <a href="#" class="pic" id="pic3">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/heibai.html" class="pic" id="pic4" >
+                        <a href="#" class="pic" id="pic4">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/penhui.html" class="pic" id="pic5" >
+                        <a href="#" class="pic" id="pic5">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/gongcheng.html" class="pic" id="pic6" >
+                        <a href="#" class="pic" id="pic6">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/zhuangding.html" class="pic" id="pic7" >
+                        <a href="#" class="pic" id="pic7">
 
                         </a>
                     </li>
                     <li>
-                        <a href="/Home/Onepage/shangwu.html" class="pic" id="pic8" >
+                        <a href="#" class="pic" id="pic8">
 
                         </a>
                     </li>
@@ -192,7 +194,7 @@
         <div class="line"></div>
 
         <div class="ru r2">
-            <a href="http://dytw.yunduanky.com/Home/QueryOrder">
+            <a href="#">
                 <div class="rukou_keyword">
                     服务网点
                 </div>
@@ -206,7 +208,7 @@
         <div class="line"></div>
 
         <div class="ru r3">
-            <a href="http://dytw.yunduanky.com/">
+            <a href="#">
                 <div class="rukou_keyword">
                     成功案例
                 </div>
@@ -220,7 +222,7 @@
         <div class="line"></div>
 
         <div class="ru r4">
-            <a href="/Home/Onepage/contact.html">
+            <a href="#">
                 <div class="rukou_keyword">
                     服务优势
                 </div>
@@ -233,7 +235,6 @@
 
     </div>
 </div>
-
 
 
 <!--页尾-->
@@ -261,7 +262,8 @@
                 </p>-->
 
                 <p>
-                    北京美立特快印  Copyright <span>©</span> 2000-2016 www.mcopy.com.cn <a href="http://www.miitbeian.gov.cn" target="_blank">京CP100034678</a>
+                    北京美立特快印 Copyright <span>©</span> 2000-2016 www.mcopy.com.cn <a href="http://www.miitbeian.gov.cn"
+                                                                                   target="_blank">京CP100034678</a>
                 </p>
                 <p style="display:none; ">
                     <script type="text/javascript" src="/out/js/tongji.js"></script>
@@ -287,17 +289,15 @@
     </div>
 </div>
 
-
-
 <div id="top"></div>
 
 <!--海报JS-->
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $(".index_focus").hover(function(){
+        $(".index_focus").hover(function () {
             $(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
-        },function(){
+        }, function () {
             $(this).find(".index_focus_pre,.index_focus_next").fadeOut()
         });
 
@@ -306,14 +306,14 @@
             mainCell: ".bd ul",
             delayTime: 500,
             interTime: 3500,
-            prevCell:".index_focus_pre",
-            nextCell:".index_focus_next",
+            prevCell: ".index_focus_pre",
+            nextCell: ".index_focus_next",
             effect: "fold",
             autoPlay: true,
             trigger: "click",
-            startFun:function(i){
-                $(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
-                $(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
+            startFun: function (i) {
+                $(".index_focus_info").eq(i).find("h3").css("display", "block").fadeTo(1000, 1);
+                $(".index_focus_info").eq(i).find(".text").css("display", "block").fadeTo(1000, 1);
             }
         });
 

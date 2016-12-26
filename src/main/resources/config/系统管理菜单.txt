@@ -1,0 +1,30 @@
+#系统菜单在menu.js中进行修改，数组
+#格式：id、text、attributes、parentid、iconCls
+{
+            id: 1,
+            text: "系统管理",
+            attributes: null,
+            parent_id: 0,
+            iconCls: "glyphicon-cog"
+        },
+        {
+            id: 2,
+            text: "菜单管理",
+            attributes: null,
+            parent_id: 0,
+            iconCls: "glyphicon-cog"
+        },
+        {
+            id: 3,
+            text: "页面管理",
+            attributes: "http://www.baidu.com",
+            parent_id: 0,
+            iconCls: "glyphicon-cog"
+        }，
+        {
+                    id: 4,
+                    text: "用户管理",
+                    attributes: "http://www.baidu.com",
+                    parent_id: 0,
+                    iconCls: "glyphicon-cog"
+                }

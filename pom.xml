@@ -9,15 +9,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <jdk.version>1.8</jdk.version>
-        <spark.version>2.2</spark.version>
-        <spark.freemarker.version>2.0.0</spark.freemarker.version>
-        <freemarker.version>2.3.23</freemarker.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.version>4.2.0.RELEASE</spring.version>
         <hsqldb.version>2.3.3</hsqldb.version>
         <dbcp.version>2.1.1</dbcp.version>
         <jbcrypt.version>0.4</jbcrypt.version>
-        <commons.beanutils.version>1.9.2</commons.beanutils.version>
     </properties>
 
     <dependencies>
@@ -25,7 +22,7 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
-            <version>${spark.version}</version>
+            <version>LATEST</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -52,14 +49,14 @@
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-template-freemarker</artifactId>
-            <version>${spark.freemarker.version}</version>
+            <version>LATEST</version>
         </dependency>
 
         <!-- Freemarker -->
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version>${freemarker.version}</version>
+            <version>LATEST</version>
         </dependency>
 
         <!-- Spring Core -->
@@ -106,7 +103,7 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>LATEST</version>
+            <version>4.1.6</version>
         </dependency>
 
         <!-- 数据源 -->
@@ -130,43 +127,138 @@
             <version>${jbcrypt.version}</version>
         </dependency>
 
-        <!-- Populate bean from request -->
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.20</version>
+        </dependency>
+
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>${commons.beanutils.version}</version>
+            <version>1.9.3</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
     </dependencies>
 
     <build>
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+
+            <!--MAVEN打包路径，jar包中不含配置文件，配置main方法-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <outputDirectory>output/${project.name}</outputDirectory>
+                    <includes></includes>
+                    <excludes>
+                        <exclude>config/**</exclude>
+                        <exclude>*.properties</exclude>
+                        <exclude>public/**</exclude>
+                        <exclude>spark/**</exclude>
+                    </excludes>
+                    <archive>
+                        <compress />
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>. ${project.name}_lib</classpathPrefix>
+                            <mainClass>cn.com.mcopy.server.AppServer</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!--拷贝配置文件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <echo message="copying resources..." />
+                                <copy verbose="true" overwrite="true" todir="output/${project.name}/">
+                                    <fileset dir="src/main/resources" includes="**" excludes="sql/**" />
+                                </copy>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.2.1</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.10</version>
                 <executions>
                     <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
                         <goals>
-                            <goal>java</goal>
+                            <goal>copy-dependencies</goal>
                         </goals>
+                        <configuration>
+                            <outputDirectory>output/${project.name}/${project.name}_lib</outputDirectory>
+                            <overWriteReleases>true</overWriteReleases>
+                            <overWriteSnapshots>true</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <mainClass>cn.com.mcopy.server.AppServer</mainClass>
-                    <arguments>
-                    </arguments>
-                </configuration>
             </plugin>
 
+            <!--通过MAVEN生成mybatis模板-->
             <plugin>
                 <groupId>org.mybatis.generator</groupId>
                 <artifactId>mybatis-generator-maven-plugin</artifactId>

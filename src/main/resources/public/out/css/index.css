@@ -239,13 +239,13 @@ background-color: rgba(132,29,163,0.9);/* IE9、标准浏览器、IE6和部分IE
 .index_focus_post{z-index:10;}
 .index_focus .pic{height:auto;display:block; width:100%; height:400px;}
 .index_focus .pic:hover{text-decoration:none;}
-.index_focus .pic2{background:url(https://img.alicdn.com/imgextra/i1/419253197/TB2as9_opXXXXa2XXXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.index_focus .pic3{background:url(https://img.alicdn.com/imgextra/i3/419253197/TB2ipS0opXXXXbQXpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.pic4{background:url(https://img.alicdn.com/imgextra/i1/419253197/TB20gPMopXXXXb1XpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.pic5{background:url(https://img.alicdn.com/imgextra/i3/419253197/TB2N7uvoFXXXXc9XpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.pic6{background:url(https://img.alicdn.com/imgextra/i1/419253197/TB2chuPopXXXXcdXpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.pic7{background:url(https://img.alicdn.com/imgextra/i2/419253197/TB2jslIoFXXXXcJXpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
-.pic8{background:url(https://img.alicdn.com/imgextra/i2/419253197/TB2mh2LopXXXXa9XpXXXXXXXXXX_!!419253197.jpg) center center no-repeat;}
+.index_focus .pic2{background:url(/local/images/首页2.jpg) center center no-repeat;}
+.index_focus .pic3{background:url(/local/images/首页3.jpg) center center no-repeat;}
+.pic4{background:url(/local/images/首页4.jpg) center center no-repeat;}
+.pic5{background:url(/local/images/首页5.jpg) center center no-repeat;}
+.pic6{background:url(/local/images/首页6.jpg) center center no-repeat;}
+.pic7{background:url(/local/images/首页7.jpg) center center no-repeat;}
+.pic8{background:url(/local/images/首页8.jpg) center center no-repeat;}
 .index_focus .slide_nav{position:absolute;left:39%;bottom:2%;}
 .index_focus .slide_nav a{cursor:pointer;float:left;font-size:28px;font-family:arial;color:#fff;padding:5px 10px;}
 .index_focus .slide_nav li:hover,.index_focus .slide_nav .on{text-decoration:none;color:#f48407;filter:alpha(opacity=80);opacity:0.8;}
