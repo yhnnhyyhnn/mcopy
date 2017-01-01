@@ -123,11 +123,6 @@ function modifyData() {
             $("#editor1").html(json['cONTENT']);
             $("#MENU_ID1").val(menu_id);
 
-            if(json["mENULEVEL"]=="1"){
-                alert("一级菜单不能修改！");
-                return;
-            }
-
         }
     });
 

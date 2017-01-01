@@ -181,7 +181,7 @@
 <div class="boxcontent">
     <div class="rukou">
         <div class="ru r1">
-            <a href="/Home/Youhui/index.html">
+            <a href="/gywm/gsjj">
                 <div class="rukou_keyword">
                     公司简介
                 </div>
@@ -195,7 +195,7 @@
         <div class="line"></div>
 
         <div class="ru r2">
-            <a href="#">
+            <a href="/fwwd">
                 <div class="rukou_keyword">
                     服务网点
                 </div>
@@ -209,7 +209,7 @@
         <div class="line"></div>
 
         <div class="ru r3">
-            <a href="#">
+            <a href="/cgal">
                 <div class="rukou_keyword">
                     成功案例
                 </div>
@@ -223,7 +223,7 @@
         <div class="line"></div>
 
         <div class="ru r4">
-            <a href="#">
+            <a href="/hxyw">
                 <div class="rukou_keyword">
                     服务优势
                 </div>
@@ -265,9 +265,6 @@
                 <p>
                     北京美立特快印 Copyright <span>©</span> 2000-2016 www.mcopy.com.cn <a href="http://www.miitbeian.gov.cn"
                                                                                    target="_blank">京CP100034678</a>
-                </p>
-                <p style="display:none; ">
-                    <script type="text/javascript" src="/out/js/tongji.js"></script>
                 </p>
             </div>
 

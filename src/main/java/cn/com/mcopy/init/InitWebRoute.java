@@ -39,6 +39,9 @@ public class InitWebRoute {
             String userAgent = request.userAgent().toLowerCase();
             if (CheckMobile.check(userAgent)) {
                 logger.info("移动端访问.....");
+                Map<String, Object> model = new HashMap<>();
+                model.put("title", "first one");
+                return new ModelAndView(model, "wap/index.ftl");
             }
             Map<String, Object> model = new HashMap<>();
             model.put("title", "first one");

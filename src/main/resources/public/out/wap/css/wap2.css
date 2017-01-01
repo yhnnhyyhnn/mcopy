@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+.wap-rukou .wap-rukou-ziti,.wap-rukou .wap-rukou-ziti a{
+    font-size:12px;
+}
+.wap-hexin .wap-hexin-miaoshu{
+    font-size:13px;
+}
+
+/* 小屏幕（平板，小于等于320px） */
+@media (max-width: 320px) {
+    .wap-rukou .wap-rukou-ziti,.wap-rukou .wap-rukou-ziti a{
+        font-size:12px;
+    }
+
+    .wap-hexin .wap-hexin-miaoshu{
+        font-size:12px;
+    }
+}

@@ -1,0 +1,169 @@
+@CHARSET "UTF-8";
+
+.navbar .wap-header-bg{
+    background:#ff8b03;
+}
+.navbar .wap-header-btn{
+    border:1px solid #e1e1e1; background:none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
+    background: none;
+}
+#navbar-collapse ul {
+    margin-top:0;
+}
+.navbar-fixed-top {
+    border-bottom-width:0px;
+}
+.navbar-default{
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+#myCarousel {
+    margin: 50px 0 0 0;
+}
+.carousel-inner img {
+    margin: 0 auto;
+}
+
+
+
+
+
+.wap-rukou{
+    margin-top:10px; text-align:center;
+}
+.wap-rukou2{
+    margin-top:5px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wap-rukou .wap-rukou-a a{
+    display:block;height:50px; width:50px;
+}
+
+.wap-rukou .wap-rukou-1{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background-color:#2fd082;
+}
+
+.wap-rukou .wap-rukou-2{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#f2c011;
+}
+.wap-rukou .wap-rukou-3{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#bc72d1;
+}
+
+.wap-rukou .wap-rukou-4{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#fb5a48;
+}
+.wap-rukou .wap-rukou-5{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#fd494c;
+}
+.wap-rukou .wap-rukou-6{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#7094d2;
+}
+.wap-rukou .wap-rukou-7{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#f76a94;
+}
+.wap-rukou .wap-rukou-8{
+    margin:0px auto; height:50px; width:50px; border-radius:50%; background:#ff8b03;
+}
+
+.wap-rukou span{
+    font-size:22px; line-height:50px;color:#fff; text-align:center;
+}
+
+.wap-rukou .wap-rukou-ziti,.wap-rukou .wap-rukou-ziti a{
+    font-size:12px; font-family:'微软雅黑'; color:#666; text-align:center; height:25px; line-height:25px;
+}
+
+.wap-hexin{
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.wap-hexin .wap-hexin-title{
+    height:40px; border-bottom:1px dotted #ddd;font-size:16px; font-family:'微软雅黑'; color:#ff8b03;
+    line-height:40px;
+}
+
+.wap-hexin .wap-hexin-title-2{
+    font-size:12px; text-align:right;
+}
+
+.wap-hexin .wap-hexin-more{
+    height:40px; margin-top:10px; border-top:1px dotted #ddd;font-size:12px; font-family:'微软雅黑'; color:#ff8b03; text-align:center;
+    line-height:40px;
+}
+
+
+
+.wap-hexin h2{
+    padding:0px; margin:0px; height:24px; text-align:left;font-size:14px; font-family:'微软雅黑'; color:#ff8b03; line-height:24px;
+}
+.wap-hexin h2 a{
+    color:#ff8b03;
+}
+.wap-hexin .wap-hexin-miaoshu{
+    padding:0px;margin:0px; font-size:11px; font-family:'微软雅黑'; color:#666; line-height:15px;
+}
+.wap-hexin .wap-hexin-miaoshu a{
+    color:#666;
+}
+.wap-hexin .img-thumbnail{
+    border: 1px solid #f1f1f1;
+}
+
+.wap-copyright{padding:5px 0px; background:#fcfcfc;}
+
+.wap-copyright .copyright1{
+    font-size:12px; font-family:'微软雅黑'; color:#999; height:22px; text-align:center;line-height:22px;
+}
+
+
+.wap-bottom-ico{
+    height:20px; text-align:center; line-height:20px; color:#666; margin-top:3px;
+}
+.wap-bottom-ico a{
+    display:block; width:20px; height:20px; margin:0px auto;color:#666;
+}
+
+.wap-bottom-title{
+    height:20px; text-align:center; line-height:18px; font-size:12px; font-family:'微软雅黑'; color:#666;
+}
+
+.wap-bottom-title a{
+    color:#666;
+}
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+    .navbar-pc{
+        background:#ff8b03;
+    }
+    .navbar-pc .navbar-nav li a{
+        color:#fff;
+    }
+
+    .navbar-pc .navbar-nav>.active>a{
+        color:#ff8b03;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+
+}
