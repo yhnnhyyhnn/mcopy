@@ -69,9 +69,15 @@ public class ManagerRoute {
         //登陆页面
         get("/manage/login", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("title", "first one");
             return new ModelAndView(model, "manage/login.ftl");
         }, new FreeMarkerEngine());
+
+        //登出
+        get("/login/logout",(request,response)->{
+            Map<String, Object> model = new HashMap<>();
+            removeAuthenticatedUser(request);
+            return new ModelAndView(model, "manage/login.ftl");
+        },new FreeMarkerEngine());
 
         get("/common/head", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
@@ -244,7 +250,7 @@ public class ManagerRoute {
         }, new FreeMarkerEngine());
 
         //新增菜单
-        get("/manage/menus/add", (request, response) -> {
+        post("/manage/menus/add", (request, response) -> {
             Set<String> params = request.queryParams();
             Map<String,String> map = new HashMap<>();
             params.forEach(s->{
@@ -279,7 +285,7 @@ public class ManagerRoute {
         });
 
         //修改菜单信息
-        get("/manage/menus/update/:menuid",(request,response)->{
+        post("/manage/menus/update/:menuid",(request,response)->{
             String menuid = request.params(":menuid");
             logger.info("开始更新菜单信息：{}",menuid);
             Set<String> params = request.queryParams();
@@ -312,7 +318,7 @@ public class ManagerRoute {
         });
 
         //删除菜单
-        get("/manage/menus/delete/:menuid",(request,response)->{
+        post("/manage/menus/delete/:menuid",(request,response)->{
             String menuid = request.params(":menuid");
             menusService.deleteMenu(NumberUtils.toInt(menuid));
             return "success";
@@ -407,7 +413,7 @@ public class ManagerRoute {
             BeanUtils.copyProperties(tab,map);
             tab.setMENU_ID(Integer.parseInt(map.get("MENUNAME")));
 
-            String[] s = StringUtils.substringsBetween(tab.getCONTENT(), "file:///", "\" ");
+            String[] s = StringUtils.substringsBetween(tab.getCONTENT(), "file:///", "\"");
             String[] newFiles = null;
             if(s!=null && s.length > 0){
                 newFiles = FileUtil.uploadFiles(s);
@@ -436,7 +442,7 @@ public class ManagerRoute {
             return new ModelAndView(model,"manage/news.ftl");
         },new FreeMarkerEngine());
 
-        get("/manage/news/add",(request,response)->{
+        post("/manage/news/add",(request,response)->{
             Set<String> params = request.queryParams();
             Map<String,String> map = new HashMap<>();
             params.forEach(s->{
@@ -446,6 +452,21 @@ public class ManagerRoute {
 
             News news = new News();
             BeanUtils.copyProperties(news,map);
+
+            String[] s = StringUtils.substringsBetween(news.getCONTENT(), "file:///", "\"");
+            String[] newFiles = null;
+            if(s!=null && s.length > 0){
+                newFiles = FileUtil.uploadFiles(s);
+            }
+            logger.info("替换content中的图片地址");
+            if(newFiles!=null && newFiles.length > 0){
+                for(int i=0;i<s.length;i++){
+                    logger.info("图片地址的位置：{}",news.getCONTENT().indexOf(s[i]));
+                    String content = news.getCONTENT().replace("file:///"+s[i],newFiles[i]);
+                    news.setCONTENT(content);
+                }
+            }
+
             news.setREADCOUNT(0);
             news.setCREATEDATE(new Date());
             newsService.add(news);
@@ -470,6 +491,21 @@ public class ManagerRoute {
             logger.info(JSON.toJSONString(map));
             News news=new News();
             BeanUtils.copyProperties(news,map);
+
+            String[] s = StringUtils.substringsBetween(news.getCONTENT(), "file:///", "\"");
+            String[] newFiles = null;
+            if(s!=null && s.length > 0){
+                newFiles = FileUtil.uploadFiles(s);
+            }
+            logger.info("替换content中的图片地址");
+            if(newFiles!=null && newFiles.length > 0){
+                for(int i=0;i<s.length;i++){
+                    logger.info("图片地址的位置：{}",news.getCONTENT().indexOf(s[i]));
+                    String content = news.getCONTENT().replace("file:///"+s[i],newFiles[i]);
+                    news.setCONTENT(content);
+                }
+            }
+
             news.setNEW_ID(NumberUtils.toInt(newid));
             newsService.update(news);
 

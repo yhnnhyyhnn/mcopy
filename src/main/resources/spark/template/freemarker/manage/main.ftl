@@ -48,8 +48,6 @@
                     <a href="#" class="easyui-menubutton" data-options="menu:'#mm1'">admin</a>
                 </div>
                 <div id="mm1" style="width:150px;">
-                    <div data-options="iconCls:'icon-edit'">修改密码</div>
-                    <div class="menu-sep"></div>
                     <div data-options="iconCls:'icon-undo'" onclick="location.href='/login/logout'">退出</div>
                 </div>
             </td>

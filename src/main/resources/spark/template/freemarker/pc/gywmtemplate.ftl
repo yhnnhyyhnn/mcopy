@@ -15,6 +15,7 @@
     <script type="text/javascript" src="/out/js/script.js"></script>
     <script type="text/javascript" src="/local/gywm.js"></script>
     <script type="text/javascript" src="/local/index.js"></script>
+    <script type="text/javascript" src="/out/js/jquery.pin.js"></script>
 
 </head>
 
@@ -30,6 +31,8 @@
             $('.tab').children('div').eq(Index).show().siblings('div').hide();
 
         });
+
+        $(".daohang").pin();
     });
 </script>
 
@@ -172,7 +175,7 @@
 <!--页尾-->
 <div class="boxcontent bottom_bg2">
     <div class="boxcontent bottom_bg">
-        <!--<div class="article">
+        <#--<div class="article">
             <h2>广州图文印刷公司新闻资讯</h2>
             <div class="title">
                 [<a href="/Home/Product/index.html">图文印刷案例</a>]:<a href="/Home/Product/index/planmu_id/1.html">商务印刷产品的案例</a>

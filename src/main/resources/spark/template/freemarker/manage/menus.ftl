@@ -360,6 +360,7 @@
             $.ajax({
                 url:"/manage/menus/delete/"+menu_id,
                 data:{},
+                type:"POST",
                 ContentType:"application/json;charset=utf-8",
                 success:function (data) {
                     if(data == "success"){

@@ -25,6 +25,7 @@ $(function () {
         $.ajax({
             url: "/manage/news/add",
             data: d,
+            type:"POST",
             ContentType: "application/json;charset=utf-8",
             success: function (data) {
                 if (data=="success") {

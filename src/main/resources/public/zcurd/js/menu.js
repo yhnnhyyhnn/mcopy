@@ -98,14 +98,14 @@ function loadTree() {
             parent_id: 0,
             iconCls: "glyphicon glyphicon-list-alt"
         }
-        ,
-        {
-            id: 6,
-            text: "数据库管理",
-            attributes: "/manage/dbManager",
-            parent_id: 0,
-            iconCls: "glyphicon-duplicate"
-        }
+        // ,
+        // {
+        //     id: 6,
+        //     text: "数据库管理",
+        //     attributes: "/manage/dbManager",
+        //     parent_id: 0,
+        //     iconCls: "glyphicon-duplicate"
+        // }
     ];
 
     // for(var i = menulist.length-1; i >=0; i--) {

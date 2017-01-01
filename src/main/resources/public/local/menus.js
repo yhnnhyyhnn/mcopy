@@ -43,6 +43,7 @@ $(function () {
         $.ajax({
             url: "/manage/menus/add",
             data: d,
+            type:"POST",
             ContentType: "application/json;charset=utf-8",
             success: function (data) {
                 if (data=="success") {
@@ -71,6 +72,7 @@ $(function () {
         $.ajax({
             url:"/manage/menus/update/"+menuid,
             data:d,
+            type:"POST",
             ContentType:"application/json;charset=utf-8",
             success:function (data) {
                 if(data=="success"){
@@ -120,6 +122,12 @@ function modifyData() {
             $("#USETEMP1").val(json['uSETEMP']);
             $("#editor1").html(json['cONTENT']);
             $("#MENU_ID1").val(menu_id);
+
+            if(json["mENULEVEL"]=="1"){
+                alert("一级菜单不能修改！");
+                return;
+            }
+
         }
     });
 

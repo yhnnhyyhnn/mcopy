@@ -16,6 +16,7 @@
     <script type="text/javascript" src="/out/js/jquery.SuperSlide.js"></script>
     <script type="text/javascript" src="/out/js/script.js"></script>
     <script type="text/javascript" src="/local/index.js"></script>
+    <script type="text/javascript" src="/out/js/jquery.pin.js"></script>
 
 </head>
 
@@ -32,6 +33,7 @@
 
         });
 
+        $(".daohang").pin();
 
     });
 
@@ -114,9 +116,15 @@
                     <ul>
                     <#if list??>
                         <#list list as ll>
-                            <li>
-                                <span class="s4"><a href="${ll.URL}" title="${ll.MENUNAME}">${ll.MENUNAME}</a></span>
-                            </li>
+                            <#if ll.MENUNAME=="新闻中心">
+                                <li>
+                                    <span class="s2"><a href="${ll.URL}" title="${ll.MENUNAME}">${ll.MENUNAME}</a></span>
+                                </li>
+                            <#else >
+                                <li>
+                                    <span class="s4"><a href="${ll.URL}" title="${ll.MENUNAME}">${ll.MENUNAME}</a></span>
+                                </li>
+                            </#if>
                         </#list>
                     </#if>
                     </ul>
@@ -157,7 +165,7 @@
 <!--页尾-->
 <div class="boxcontent bottom_bg2">
     <div class="boxcontent bottom_bg">
-        <!--<div class="article">
+        <#--<div class="article">
             <h2>广州图文印刷公司新闻资讯</h2>
             <div class="title">
                 [<a href="/Home/Product/index.html">图文印刷案例</a>]:<a href="/Home/Product/index/planmu_id/1.html">商务印刷产品的案例</a>
