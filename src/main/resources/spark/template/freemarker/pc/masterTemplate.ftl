@@ -16,7 +16,7 @@
   			<script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->
 
-            <link href="/Public/home/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+            <link href="/Public/home/images/weixin_03_01.png" rel="shortcut icon" type="image/x-icon" />
             <script src="/Public/wap/js/is_wap.js" type="text/javascript"></script>
             <script type="text/javascript">uaredirect("http://www.dytw.net/wap");</script>
             <link rel="stylesheet" href="/Public/home/css/index.css" />

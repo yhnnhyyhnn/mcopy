@@ -6,7 +6,7 @@
     <title>北京美立特图文快印</title>
     <meta name="description" content="美立特图文快印,专业提供一站式图文快印解决方案,我们的服务涵括:彩色数码印刷,黑白数码印刷,大幅面写真输出,工程图纸输出,文本装订,商务印刷,网络印刷,图文快印,数码快印,图文打印,数码直印,CAD晒图,CAD出图,CAD彩图,数码打样,大图复印,标书打印,工程图打印,菜谱印刷,服装吊牌印刷等" />
     <meta name="keywords" content="美立特图文快印,图文快印,黑白打印,24小时数码快印店,24小时图文快印店,24小时打印店,图文打印店,数码打印店,数码快印公司,标书制作,工程图打印,晒蓝图,数字印刷,印刷报价,数字印刷,云印刷,网络印刷,菜谱制作,大图打印,数码印刷,复印店,彩色喷画,工程图纸打印/复印,CAD输出,工程图纸扫描,平面设计,标书制作装订" />
-    <link href="/out/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/out/images/weixin_03_01.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="/out/css/index.css" />
     <link rel="stylesheet" href="/out/css/lanmu.css" />
     <link rel="stylesheet" href="/out/css/onepage.css" />
